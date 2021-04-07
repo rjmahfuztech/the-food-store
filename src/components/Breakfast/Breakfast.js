@@ -1,25 +1,24 @@
 import React from 'react';
 import './Breakfast.css';
 import { Card } from 'react-bootstrap';
+import { useHistory } from 'react-router';
 
 const Breakfast = (props) => {
-    const { name, price, img } = props.breakfast;
+    const { name, price, img, key } = props.breakfast;
+    const history = useHistory();
+
+    const handleClick = (useKey) => {
+        const url = `/food/${useKey}`;
+        history.push(url);
+    }
     return (
-        // <div>
-        //     <img src={require(`../../images/Breakfast/${img}`).default} alt=""/>
-        //     <h2>{name}</h2>
-        // </div>
-        <Card className="text-center p-3 container card-style">
+        <Card onClick={() => handleClick(key)} className="text-center p-3 container card-style">
             <div>
                 <Card.Img className="img-size" variant="top" src={require(`../../images/Breakfast/${img}`).default} />
             </div>
             <Card.Body>
                 <Card.Title>{name}</Card.Title>
                 <Card.Title>${price}</Card.Title>
-                <Card.Text>
-
-                </Card.Text>
-                {/* <Button variant="primary">Go somewhere</Button> */}
             </Card.Body>
         </Card>
 

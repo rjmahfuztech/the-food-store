@@ -2,7 +2,7 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 
 const DeliverType = (props) => {
-    const {name, img} = props.deliver;
+    const {name, img, description} = props.deliver;
     return (
         // <div>
         //     <h2>{name}</h2>
@@ -14,7 +14,7 @@ const DeliverType = (props) => {
             <Card.Body>
                 <Card.Title>{name}</Card.Title>
                 <Card.Text>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos alias iusto excepturi fugit.
+                    {description}
                 </Card.Text>
                 {/* <Button variant="primary">Go somewhere</Button> */}
             </Card.Body>

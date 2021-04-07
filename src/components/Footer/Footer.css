@@ -1,0 +1,10 @@
+.footer-style{
+    max-height: 400px;
+    background-color: black;
+}
+.footer-style h5, .footer-style p{
+    color: #fff;
+}
+.footer-style p{
+    margin-bottom: -1px;
+}

@@ -4,10 +4,10 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import NotFound from './components/NotFound/NotFound';
+import SelectFood from './components/SelectFood/SelectFood';
 
 function App() {
   return (
@@ -15,6 +15,9 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route path="/food/:byKey">
+          <SelectFood />
         </Route>
         <Route path="*">
           <NotFound />

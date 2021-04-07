@@ -1,20 +1,31 @@
 import React from 'react';
 import './Header.css';
-import { Card } from 'react-bootstrap';
+import { Card, Nav, Navbar } from 'react-bootstrap';
 import bannerImg from '../../images/bannerbackground.png';
 
 const Header = () => {
     return (
         <div>
-            <Card className="bg-dark text-white">
+            <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+                <Navbar.Brand href="#home">The Food Store</Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="mr-auto">
+                        <Nav.Link href="#features"></Nav.Link>
+                    </Nav>
+                    <Nav>
+                        <Nav.Link href="#deets">More deets</Nav.Link>
+                        <Nav.Link href="#memes">
+                            Login
+                        </Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
+            <Card className="bg-dark text-black text-center">
                 <Card.Img className="" src={bannerImg} alt="Card image" />
                 <Card.ImgOverlay>
-                    {/* <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
-                    </Card.Text>
-                    <Card.Text>Last updated 3 mins ago</Card.Text> */}
+                    <Card.Title>Best food waiting for your belly</Card.Title>
+                    {/* <input type="text" className="form-control"/> */}
                 </Card.ImgOverlay>
             </Card>
         </div>
