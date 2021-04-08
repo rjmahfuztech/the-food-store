@@ -3,6 +3,7 @@ import './Header.css';
 import { Card, Nav, Navbar } from 'react-bootstrap';
 import bannerImg from '../../images/bannerbackground.JPG';
 import TextField from '@material-ui/core/TextField';
+import logo from '../../images/logo/the-food-store.png';
 
 
 
@@ -10,7 +11,8 @@ const Header = () => {
     return (
         <div>
             <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-                <Navbar.Brand href="#home">The Food Store</Navbar.Brand>
+                {/* <Navbar.Brand href=""></Navbar.Brand> */}
+                <span><img className="logo-size" src={logo} alt="Logo"/></span>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
@@ -26,10 +28,10 @@ const Header = () => {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-            <Card className="bg-dark text-white text-center">
-                <Card.Img className="" src={bannerImg} alt="Card image" />
-                <Card.ImgOverlay>
-                    <Card.Title>Best food waiting for your belly</Card.Title>
+            <Card className="bg-dark text-center text-white">
+                <Card.Img src={bannerImg} alt="Card image" />
+                <Card.ImgOverlay className="overly-align">
+                    <Card.Title className="font">Best food waiting for your belly</Card.Title>
                     {/* <input type="text" className="form-control"/> */}
                         <TextField
                             id="outlined-secondary"
