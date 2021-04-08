@@ -93,7 +93,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="mt-5 mb-5">
+            <div className="mt-5">
                 <Footer></Footer>
             </div>
         </div>

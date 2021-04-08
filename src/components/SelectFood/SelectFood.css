@@ -1,0 +1,43 @@
+.manage-food-style h2{
+    font-size: 40px;
+}
+.manage-food-style h3{
+    font-size: 25px;
+}
+.manage-food-style .food-count-design{
+    border: 1px solid rgb(207, 207, 201);
+    width: 130px;
+    border-radius: 15px;
+}
+.manage-food-style span{
+    cursor: pointer;
+}
+.manage-food-style span:hover{
+    color: rgb(255, 145, 0);
+}
+.manage-food-style input{
+    width: 70px;
+    border: none;
+    text-align: center;
+}
+.img-size img{
+    width: 100%;
+}
+
+@media (max-width: 991.98px) {
+    .manage-food-style h2{
+        font-size: 27px;
+    }
+    .manage-food-style h3{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .manage-food-style h2{
+    font-size: 25px;
+}
+    .manage-food-style h3{
+        font-size: 20px;
+    }
+}
