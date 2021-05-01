@@ -10,3 +10,14 @@
 
 -> You can order food.
 
+### Front-End Technologys
+
++ CSS3
++ JavaScript
++ React.js
++ Bootsrtap
+
+### Back-End Technologys
+
++ Node.js
++ MongoDB(database).
